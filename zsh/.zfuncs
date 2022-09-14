@@ -1,0 +1,3 @@
+function tx() {
+    tmux new-session -t "$1" \; new-window -n vim\; new-window -n git\; new-window -n cal\;
+}
