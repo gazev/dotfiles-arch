@@ -1,0 +1,12 @@
+#! /bin/bash
+
+#! launch instance of calcure with only events with given string
+
+[[ ! -d /tmp/"$1" ]] && mkdir /tmp/"$1"
+
+[[ "$#" == 0 ]] && calcure && exit 
+
+grep -i "\[$1\]" /home/vugz/.config/calcure/events.csv > /tmp/"$1"/events.csv
+cat /home/vugz/.config/calcure/tasks.csv > /tmp/"$1"/tasks.csv
+
+calcure --folder=/tmp/"$1"

@@ -1,3 +1,9 @@
-function tx() {
+function tx {
     tmux new-session -t "$1" \; new-window -n vim\; new-window -n git\; new-window -n cal\;
+    exit 0
+}
+
+function code_fn {
+	code $1
+	exit 0 
 }

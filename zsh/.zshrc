@@ -21,18 +21,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-function code_fn()
-{
-	code $1
-	exit
-}
-
-alias code='code_fn'
-alias a='echo "hi"'
-
-source .config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source .config/zsh/powerlevel10k/powerlevel10k.zsh-theme
-source .config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/vugz/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/vugz/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
+source /home/vugz/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zfuncs
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
