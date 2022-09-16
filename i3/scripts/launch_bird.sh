@@ -7,9 +7,11 @@ attempts=5
 
 function loop {
     while [[ $attempts != 0 ]]; do 
-        echo "$attempts"
         if [[ $(ping -w 1 -c 1 8.8.8.8 2> /dev/null) ]]; then
-            exec thunderbird && exit
+            thunderbird &
+            sleep 2
+            i3-msg "[class=thunderbird] move workspace 5"
+            exit 0
         else
             ((attemps--))
             sleep 10

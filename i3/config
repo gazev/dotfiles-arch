@@ -199,11 +199,11 @@ for_window [class="(?i)Thunderbird" instance="Mail"] floating enable, resize set
 
 bindsym $mod+w exec /usr/bin/firefox
 
-exec_always --no-startup-id feh --bg-fill ~/Wallpapers/wallpaper.jpg
-
-exec_always picom --experimental-backends
-
+exec_always --no-startup-id feh --bg-fill ~/Wallpapers/wallhaven-k7q9m7.png
+exec_always picom --backend glx
 for_window [class="^.*"] border pixel 2
+for_window [title="Sign in to Minecraft"] floating enable, resize set 1400px 800px, move position center
+for_window [title="Welcome to Xbox"] floating enable, resize set 1400px 800px, move position center
 exec_always --no-startup-id conky
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
@@ -211,8 +211,8 @@ exec /home/vugz/.config/i3/scripts/launch_bird.sh
 exec /home/vugz/.config/i3/scripts/monitors.sh
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #434343 #434343 #ffffff #434343   #434343
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.focused          #434343 #434343 #ffffff #1A3A3A   #61A9B5
+client.unfocused        #333333 #222222 #888888 #292d2e   #5f676a
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
