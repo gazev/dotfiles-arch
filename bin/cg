@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#! launch instance of calcure with only events with given string
+# launch instance of calcure with only events with given string
 
 [[ ! -d /tmp/"$1" ]] && mkdir /tmp/"$1"
 
